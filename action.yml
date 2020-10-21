@@ -1,5 +1,5 @@
 ---
-name: 'Spamassassin'
+name: 'SpamAssassin'
 description: 'Verify SpamAssassin rules in your Github Actions.'
 
 inputs:
@@ -10,7 +10,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/hspaans/spamassassin-action:1.0.0'
+  image: 'docker://ghcr.io/hspaans/spamassassin-action:1.0.1'
   env:
     ACTION_FORMAT: ${{ inputs.format }}
     ACTION_FILENAME: ${{ inputs.filename }}
