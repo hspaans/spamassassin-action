@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+command_string="spamassassin --lint"
+
+# Copy rules to the right location
+
+echo "Command: $command_string"
+eval "$command_string"
