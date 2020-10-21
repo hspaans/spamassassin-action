@@ -1,0 +1,20 @@
+---
+name: 'Spamassassin'
+description: 'Verify SpamAssassin rules in your Github Actions.'
+
+inputs:
+  directory:
+    description: "Source directory name"
+    required: false
+    default: /
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/hspaans/spamassassin-action:1.0.0'
+  env:
+    ACTION_FORMAT: ${{ inputs.format }}
+    ACTION_FILENAME: ${{ inputs.filename }}
+
+branding:
+  icon: 'book'
+  color: 'gray-dark'
