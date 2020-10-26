@@ -1,5 +1,6 @@
 FROM debian:10.6-slim
 
+LABEL org.opencontainers.image.description="SpamAssassin container for GitHub Action spamassassin"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/spamassassin-action
 
 LABEL repository="https://github.com/hspaans/spamassassin-action"
