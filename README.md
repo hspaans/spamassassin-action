@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Verify SpamAssassin rules
-        uses: hspaans/spamassassin-action@v1.0.1
+        uses: hspaans/spamassassin-action@v1.0.5
         with:
           directory: /
 ```
