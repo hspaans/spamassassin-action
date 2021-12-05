@@ -5,5 +5,3 @@ services:
   sut:
     build: .
     command: spamassassin --lint
-    environment:
-      - ACTION_DIRECTORY=/github/workspace
