@@ -7,13 +7,10 @@ command_string="spamassassin --lint"
 
 echo "ls -l"
 
-ls -l
+echo ${GITHUB_WORKSPACE}
+ls -l ${GITHUB_WORKSPACE}
 
-echo "ls -l"
-
-ls -l /github/workspace
-
-find ${ACTION_DIRECTORY} -name "*.cf" -exec cp {} /etc/spamassassin/ \;
+find ${GITHUB_WORKSPACE} -name "*.cf" -exec cp {} /etc/spamassassin/ \;
 
 echo "Command: $command_string"
 eval "$command_string"
