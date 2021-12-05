@@ -5,7 +5,13 @@ command_string="spamassassin --lint"
 
 # Copy rules to the right location
 
-echo ${WORKDIR}
+echo "ls -l"
+
+ls -l
+
+echo "ls -l"
+
+ls -l /github/workspace
 
 find ${ACTION_DIRECTORY} -name "*.cf" -exec cp {} /etc/spamassassin/ \;
 
