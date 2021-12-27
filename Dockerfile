@@ -1,4 +1,4 @@
-FROM debian:11.1-slim
+FROM debian:11.2-slim
 
 LABEL org.opencontainers.image.description="SpamAssassin container for GitHub Action spamassassin"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/spamassassin-action
