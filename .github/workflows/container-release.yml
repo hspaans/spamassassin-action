@@ -13,8 +13,9 @@ on:
       - v*
 
 jobs:
-  container-release:
-    uses: hspaans/.github/.github/workflows/container-release.yml@v0.1.2
+  reusable-workflow:
+    name: Reusable Workflow
+    uses: hspaans/.github/.github/workflows/container-release.yml@master
     with:
       actor: ${{ github.actor }}
       platforms: linux/amd64,linux/arm64
