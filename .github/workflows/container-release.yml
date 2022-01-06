@@ -3,12 +3,8 @@ name: Container Release
 
 on:
   push:
-    # Publish `master` as Docker `latest` image.
     branches:
       - master
-      - v*
-
-    # Publish `v1.2.3` tags as releases.
     tags:
       - v*
 
@@ -20,4 +16,4 @@ jobs:
       actor: ${{ github.actor }}
       platforms: linux/amd64,linux/arm64
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      access_token: ${{ secrets.GITHUB_TOKEN }}
