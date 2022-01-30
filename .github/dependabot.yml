@@ -5,40 +5,34 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    branch: master
-    open-pull-requests-limit: 10
+    target-branch: master
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
-    branch: master
-    open-pull-requests-limit: 10
+    target-branch: master
 
   - package-ecosystem: docker
     directory: /
     schedule:
       interval: monthly
-    branch: v1
-    open-pull-requests-limit: 10
+    target-branch: v1
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
-    branch: v1
-    open-pull-requests-limit: 10
+    target-branch: v1
 
   - package-ecosystem: docker
     directory: /
     schedule:
       interval: monthly
-    branch: v2
-    open-pull-requests-limit: 10
+    target-branch: v2
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
-    branch: v2
-    open-pull-requests-limit: 10
+    target-branch: v2
