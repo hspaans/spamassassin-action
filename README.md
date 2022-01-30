@@ -16,7 +16,13 @@ This parameter is optional; by default it will be `/`
 ---
 name: CI
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "38 3 * * 4"
 
 jobs:
   build-test:
@@ -24,10 +30,11 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
       - name: Verify SpamAssassin rules
-        uses: hspaans/spamassassin-action@v1
+        uses: hspaans/spamassassin-action@v2
         with:
           directory: /
 ```
