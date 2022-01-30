@@ -30,7 +30,8 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
       - name: Verify SpamAssassin rules
         uses: hspaans/spamassassin-action@v2
