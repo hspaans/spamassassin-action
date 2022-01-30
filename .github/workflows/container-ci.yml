@@ -3,8 +3,14 @@ name: Container CI
 
 on:
   pull_request:
+  push:
+    branches:
+      - master
+      - v*
+    tags:
+      - v*
   schedule:
-    - cron: '22 22 10 * *'
+    - cron: '6 5 * * 1'
 
 jobs:
   reusable-workflow:
