@@ -28,3 +28,17 @@ updates:
       interval: monthly
     branch: v1
     open-pull-requests-limit: 10
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: monthly
+    branch: v2
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    branch: v2
+    open-pull-requests-limit: 10
