@@ -17,18 +17,6 @@ updates:
     directory: /
     schedule:
       interval: monthly
-    target-branch: v1
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: monthly
-    target-branch: v1
-
-  - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: monthly
     target-branch: v2
 
   - package-ecosystem: github-actions
