@@ -16,11 +16,11 @@ updates:
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: monthly
+      interval: weekly
     target-branch: v2
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: monthly
+      interval: weekly
     target-branch: v2
