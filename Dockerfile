@@ -1,4 +1,4 @@
-FROM debian:bullseye-20231009-slim
+FROM debian:bullseye-20231030-slim
 
 LABEL org.opencontainers.image.description="SpamAssassin container for GitHub Action spamassassin"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/spamassassin-action
