@@ -4,23 +4,39 @@ updates:
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+    groups:
+      Docker:
+        patterns:
+          - "*"
     target-branch: master
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+    groups:
+      GitHub-Actions:
+        patterns:
+          - "*"
     target-branch: master
 
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+    groups:
+      Docker:
+        patterns:
+          - "*"
     target-branch: v2
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+    groups:
+      GitHub-Actions:
+        patterns:
+          - "*"
     target-branch: v2
