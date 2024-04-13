@@ -9,8 +9,6 @@ on:
       - v*
     tags:
       - v*
-  schedule:
-    - cron: '6 5 * * 1'
 
 jobs:
   reusable-workflow:
